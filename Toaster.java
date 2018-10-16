@@ -4,7 +4,7 @@
 * @version 1.0
 * @since October 15, 2018
 */
-public class ToasterClass{
+public class Toaster{
 
 	private boolean isOn;
 	private int minutesToToast, filledSlots;
@@ -17,7 +17,7 @@ public class ToasterClass{
 	* @param _filledSlots An int with the number of occupied slots in the toaster.
 	* @param _whatIsToasting A string that contains the type of food in the toaster.
   	*/
-	public ToasterClass(boolean _isOn, int _minutesToToast, int _filledSlots, String _whatIsToasting){
+	public Toaster(boolean _isOn, int _minutesToToast, int _filledSlots, String _whatIsToasting){
 		isOn = _isOn;
 		minutesToToast = _minutesToToast;
 		filledSlots = _filledSlots;
@@ -28,7 +28,7 @@ public class ToasterClass{
 	* @param _isOn A boolean with whether the toaster is on (true) or off (false).
 	* @param _minutesToToast An int with the number of minutes the food will be toasted.
 	*/
-	public ToasterClass(boolean _isOn, int _minutesToToast){
+	public Toaster(boolean _isOn, int _minutesToToast){
 		this(_isOn, _minutesToToast, 0, "")
 	}
 
