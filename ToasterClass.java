@@ -23,6 +23,14 @@ public class ToasterClass{
 		filledSlots = _filledSlots;
 		whatIsToasting = _whatIsToasting;
 	}
+	/**
+	* Instanciate an empty toaster with a given isOn and given minutesToToast. There are 0 filled slots and "" is toasting.
+	* @param _isOn A boolean with whether the toaster is on (true) or off (false).
+	* @param _minutesToToast An int with the number of minutes the food will be toasted.
+	*/
+	public ToasterClass(boolean _isOn, int _minutesToToast){
+		this(_isOn, _minutesToToast, 0, "")
+	}
 
 	/**
 	* Toggles the toaster on or off
